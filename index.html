@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Moderna - Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora Funcional</h1>
+        <p>Uma maneira elegante de fazer cálculos</p>
+        <div class="calculator-container">
+            <div class="calculator">
+                <input type="text" id="display" disabled>
+                <div class="buttons">
+                    <button onclick="clear()" class="function-btn">C</button>
+                    <button onclick="showHideHistory()" class="function-btn">Histórico</button>
+                    <button onclick="backspace()" class="function-btn">⌫</button>
+                    <button onclick="calculate('+')" class="function-btn">+</button>
+                    <button onclick="calculate('-')" class="function-btn">-</button>
+                    <button onclick="calculate('=')" class="function-btn">=</button>
+                    <button onclick="calculate('*')" class="function-btn">*</button>
+                    <button onclick="calculate('/')" class="function-btn">/</button>
+                    <button onclick="calculate('%')" class="function-btn">%</button>
+                    <button onclick="addToDisplay('7')" class="number-btn">7</button>
+                    <button onclick="addToDisplay('8')" class="number-btn">8</button>
+                    <button onclick="addToDisplay('9')" class="number-btn">9</button>
+                    <button onclick="addToDisplay('4')" class="number-btn">4</button>
+                    <button onclick="addToDisplay('5')" class="number-btn">5</button>
+                    <button onclick="addToDisplay('6')" class="number-btn">6</button>
+                    <button onclick="addToDisplay('1')" class="number-btn">1</button>
+                    <button onclick="addToDisplay('2')" class="number-btn">2</button>
+                    <button onclick="addToDisplay('3')" class="number-btn">3</button>
+                    <button onclick="addToDisplay(',')" class="function-btn" style="grid-column: 1 / 2;">,</button>
+                    <button onclick="addToDisplay('0')" class="number-btn" style="grid-column: 2 / 3;">0</button>
+                    <button onclick="addToDisplay('.')" class="function-btn" style="grid-column: 3 / 4;">.</button>
+                </div>
+            </div>
+        </div>
+        <div id="history" style="display: none;">
+            <h2>Histórico de Contas</h2>
+            <ul id="history-list"></ul>
+        </div>
+        <p>Visite o perfil no GitHub do criador</p>
+        <button onclick="redirectToGitHub()" class="cta-btn">Visitar</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

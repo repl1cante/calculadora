@@ -1,0 +1,107 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.calculator-container {
+    margin-top: 20px;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#display {
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    font-size: 24px;
+    text-align: right;
+    margin-bottom: 10px;
+    width: 80%; /* Define o tamanho do display como 80% da largura do body */
+    max-width: 1000px; /* Define o tamanho máximo do display como 1000px */
+    height: 80%; /* Define o tamanho do display como 80% da altura do body */
+    max-height: 500px; /* Define o tamanho máximo do display como 500px */
+}
+
+button {
+    padding: 15px;
+    font-size: 18px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.function-btn {
+    background-color: #c0c0c0;
+}
+
+.number-btn {
+    background-color: #e0e0e0;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}
+
+.cta-btn {
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #0056b3;
+}
+
+li {
+    list-style-type: none;
+  }
+
+  .highlighted-number {
+    color: #333333; /* Cor preta fosca para o número destacado */
+    font-weight: bold;
+}
+
